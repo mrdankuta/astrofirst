@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css'
-import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro';
 
 const pageTtitle = "My Astro Learning Blog";
 ---
@@ -15,7 +15,7 @@ const pageTtitle = "My Astro Learning Blog";
 		<title>{pageTtitle}</title>
 	</head>
 	<body>
-        <Navigation />
+        <Header />
 
         <h1>{pageTtitle}</h1>
         <p>This is where I will post about my journey learning Astro.</p>
@@ -26,5 +26,8 @@ const pageTtitle = "My Astro Learning Blog";
         </ul>
 
         <Footer />
+        <script>
+			import "../scripts/menu.js";
+		</script>
     </body>
 </html>
